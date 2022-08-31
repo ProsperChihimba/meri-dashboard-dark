@@ -3,7 +3,7 @@ import {
     Container,
     Flex,
     Box,
-    Heading,
+    Image,
     Text,
     Input,
     InputGroup,
@@ -12,6 +12,7 @@ import {
     Spacer
 } from '@chakra-ui/react'
 import { FiSearch, FiPlusSquare, FiShoppingCart, FiMaximize } from 'react-icons/fi';
+import pic from '../../assets/pic.png'
 
 const Main = () => {
     return (
@@ -39,13 +40,13 @@ const Main = () => {
                 </Box>
             </Flex>
 
-            <Box h={350} w='100%' bg='linear-gradient(95.71deg, #232731 -14.7%, #394359 123.09%)' rounded='3xl' boxShadow='md'>
+            <Box h={320} w='100%' bg='linear-gradient(95.71deg, #232731 -14.7%, #394359 123.09%)' rounded='3xl' boxShadow='md'>
                 <Flex>
                     <Box mt={10} ml={10} width='60%'>
                         <Text as='b' color='white' fontSize={25}>Special premium account!</Text>
                         <Text color='white' fontSize={15} mt={8}>
                             With a special premium account, you can do very interesting things!<br></br>
-                            By purchasing this account, special features will be activated for you that<br></br>
+                            By purchasing this account, special features will be activated for you that
                             you will be amazed to see!
                         </Text>
                         <Flex mt={10} gap={10}>
@@ -57,6 +58,7 @@ const Main = () => {
                             </Button>
                         </Flex>
                     </Box>
+                    <Image src={pic} ml={8} mt={5} />
                 </Flex>
             </Box>
         </Box>
