@@ -12,6 +12,7 @@ import {
     Spacer
 } from '@chakra-ui/react'
 import { FiSearch, FiPlusSquare, FiShoppingCart, FiMaximize } from 'react-icons/fi';
+import Cards from './cards';
 import pic from '../../assets/pic.png'
 
 const Main = () => {
@@ -61,6 +62,7 @@ const Main = () => {
                     <Image src={pic} ml={8} mt={5} />
                 </Flex>
             </Box>
+            <Cards />
         </Box>
     )
 }
