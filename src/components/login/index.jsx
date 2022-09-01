@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate} from 'react-router-dom'
 import {
     Box,
     Flex,
@@ -9,13 +10,19 @@ import {
     Button,
     FormControl,
     Input,
-    Divider,
-    Highlight 
+    Divider
 } from '@chakra-ui/react'
 import { FiFacebook, FiGithub, FiTwitter } from 'react-icons/fi';
 import logpic from '../../assets/login.png'
 
 const Login = () => {
+
+    const navigate = useNavigate();
+    const navigateHome = () => {
+    // 👇️ navigate to /
+    navigate('/home');
+    };
+
     return (
         <Box m={50} fontFamily='Roboto, sans-serif'>
             <Flex>
@@ -43,7 +50,7 @@ const Login = () => {
                                 <Input type='email' placeholder='Enter Email' bg='#EAF0F7' w={300} h={35} mb={5} fontSize={12} />
                                 <Input type='password' placeholder='Password' bg='#EAF0F7' w={300} h={35} fontSize={12} />
                                 <Text textAlign='right' color='#C7C7C7' fontSize={12} mt={2}>Forget password?</Text>
-                                <Button colorScheme='teal' size='sm' mt={8} mb={8}>
+                                <Button colorScheme='teal' size='sm' mt={8} mb={8} onClick={navigateHome}>
                                     Sign in
                                 </Button>
                                 <Divider />
