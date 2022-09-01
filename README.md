@@ -8,7 +8,7 @@ I got inspiration of building this dashboard while learning react js
 ### Preview
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [https://meri-dark.vercel.app/](https://meri-dark.vercel.app/) to view it in your browser.
 
 
 ### Screenshoots
