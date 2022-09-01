@@ -10,9 +10,11 @@ import {
     Button,
     FormControl,
     Input,
-    Divider
+    Divider,
+    Link
 } from '@chakra-ui/react'
 import { FiFacebook, FiGithub, FiTwitter } from 'react-icons/fi';
+import { ExternalLinkIcon } from '@chakra-ui/icons'
 import logpic from '../../assets/login.png'
 
 const Login = () => {
@@ -66,6 +68,11 @@ const Login = () => {
                     </Center>
                 </Box>
             </Flex>
+            <Center>
+                <Link color='white' href='https://github.com/ProsperChihimba/' isExternal>
+                    Made with ❤️ by Prosper Chihimba <ExternalLinkIcon mx='2px' />
+                </Link>
+            </Center>
         </Box>
     )
 }
