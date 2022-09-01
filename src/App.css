@@ -1,6 +1,6 @@
 .App {
-  background: linear-gradient(180deg, #172C37 0%, #2F5062 100%);
-  height: 100vh;
+  /* background: linear-gradient(180deg, #172C37 0%, #2F5062 100%); */
+  /* height: 100vh; */
   display: grid;
   grid-template-columns: 11rem auto;
 }

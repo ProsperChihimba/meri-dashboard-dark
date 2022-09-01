@@ -6,14 +6,16 @@ import {
     Avatar,
     Text,
     Center,
-    Button
+    Button,
+    Link
 } from '@chakra-ui/react'
+import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { FiUsers, FiTrendingDown, FiTrendingUp } from 'react-icons/fi';
 
 const Cards = () => {
     return (
         <Box mt={8} fontFamily='Roboto, sans-serif'>
-            <Flex>
+            <Flex mb={5}>
                 <Box w={260} h={150} bg='linear-gradient(119.15deg, #2E374B -13.54%, #292F3C 118.09%)' rounded='3xl'>
                     <Flex m={5} direction='column'>
                         <Flex w='100%' mb={5}>
@@ -98,6 +100,12 @@ const Cards = () => {
                     </Flex>
                 </Box>
             </Flex>
+            <Center>
+                <Link mb={5} color='white' href='https://github.com/ProsperChihimba/' isExternal>
+                    Made with ❤️ by Prosper Chihimba <ExternalLinkIcon mx='2px' />
+                </Link>
+            </Center>
+            
         </Box>
     )
 }
