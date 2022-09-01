@@ -17,10 +17,10 @@ import pic from '../../assets/pic.png'
 
 const Main = () => {
     return (
-        <Box mt={10} ml={10} mr={10}>
+        <Box mt={10} ml={10} mr={10} fontFamily='Roboto, sans-serif'>
             <Flex mb={50} >
                 <Box>
-                    <Text as='b' color='white' fontSize={25}>Dashboard</Text>
+                    <Text as='b' color='white' fontSize={25} >Dashboard</Text>
                     <Text color='#FFFFFF' fontSize={12}>See your account information in here!</Text>
                 </Box>
                 <Spacer />

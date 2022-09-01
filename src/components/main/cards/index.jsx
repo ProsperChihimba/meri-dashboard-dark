@@ -12,7 +12,7 @@ import { FiUsers, FiTrendingDown, FiTrendingUp } from 'react-icons/fi';
 
 const Cards = () => {
     return (
-        <Box mt={8}>
+        <Box mt={8} fontFamily='Roboto, sans-serif'>
             <Flex>
                 <Box w={260} h={150} bg='linear-gradient(119.15deg, #2E374B -13.54%, #292F3C 118.09%)' rounded='3xl'>
                     <Flex m={5} direction='column'>

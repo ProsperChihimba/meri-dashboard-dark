@@ -14,7 +14,7 @@ import { FiGrid, FiBarChart2, FiTrendingUp, FiPieChart, FiInbox, FiSettings, FiC
 
 const SideBar = () => {
     return (
-        <Container>
+        <Container fontFamily='Roboto, sans-serif'>
             <Box mt={10}>
                 <Heading as='h3' size='lg' color='#80D0C7'>
                     Meri UI
